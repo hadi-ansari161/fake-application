@@ -1,0 +1,12 @@
+on: [push]
+
+jobs:
+  run-populated-topbar-e2e-test:
+    runs-on: ubuntu-latest
+    name: A job to test dummy test
+    steps:
+      - uses: actions/checkout@v4
+      - id: foo
+        uses: actions/actions@v2
+        with:
+          application_url: 'https://playwright.dev/'
