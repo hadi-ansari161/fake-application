@@ -7,6 +7,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - id: foo
-        uses: hadi-ansari161/populated-topbar-actions@v2
+        uses: hadi-ansari161/populated-topbar-actions@v3
         with:
           application_url: 'https://playwright.dev/'
