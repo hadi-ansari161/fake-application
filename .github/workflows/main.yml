@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - id: foo
-        uses: hadi-ansari161/populated-topbar-actions@v12
+        uses: hadi-ansari161/populated-topbar-actions@v13
         with:
           application_url: 'https://www.googleeeeee.com/'
           # application_url: 'https://playwright.dev/'
