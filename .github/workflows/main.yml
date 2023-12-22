@@ -11,5 +11,5 @@ jobs:
       - id: foo
         uses: hadi-ansari161/populated-topbar-actions@v11
         with:
-          application_url: 'https://www.google.com/'
+          application_url: 'https://www.googleeeeee.com/'
           # application_url: 'https://playwright.dev/'
