@@ -1,3 +1,5 @@
+name: Test populated topbar
+
 on: [push]
 
 jobs:
@@ -7,6 +9,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - id: foo
-        uses: hadi-ansari161/populated-topbar-actions@v6
+        uses: hadi-ansari161/populated-topbar-actions@v7
         with:
           application_url: 'https://playwright.dev/'
