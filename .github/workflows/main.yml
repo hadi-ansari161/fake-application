@@ -11,5 +11,5 @@ jobs:
       - id: foo
         uses: hadi-ansari161/populated-topbar-actions@v15
         with:
-          application_url: 'https://stage.shm.mysystems.axis.com/'
+          application_url: 'https://stage.mysystems.axis.com/'
           # application_url: 'https://playwright.dev/'
