@@ -30,8 +30,8 @@ jobs:
         id: download-artifact
         with:
           name: greeting-file-name
-          path: .
+          path: ./artifact
       - name: print the greeting content
         run: |
           ls
-          cat greeting.txt
+          cat ./artifact/greeting.txt
