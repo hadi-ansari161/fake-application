@@ -15,7 +15,7 @@ jobs:
           TEST: ${{ secrets.DUMMY_SECRET }}
         if: env.TEST == 'Dummy'
         run: echo could read the secret
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v3
         id: greeting-file
         with:
           name: greeting-file-name
@@ -26,7 +26,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: [main-job-1]
     steps:
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v3
         id: download-artifact
         with:
           name: greering-file
