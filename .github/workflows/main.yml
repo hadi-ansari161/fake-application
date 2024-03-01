@@ -19,7 +19,7 @@ jobs:
         id: upload-artifact
         with:
           name: greeting-file
-          path: greeting.txt
+          path: ./greeting.txt
           retention-days: 1
       - uses: actions/download-artifactv4
         id: download-artifact
