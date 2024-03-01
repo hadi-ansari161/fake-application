@@ -1,6 +1,6 @@
 name: Main workflow
 
-on: [push]
+on: [fork]
 
 jobs:
   main-job-1:
