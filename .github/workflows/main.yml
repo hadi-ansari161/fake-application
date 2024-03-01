@@ -1,16 +1,15 @@
-name: Test populated topbar
+name: Main workflow
 
 on: [push]
 
 jobs:
-  run-populated-topbar-e2e-test:
+  main-job-1:
     runs-on: ubuntu-latest
-    name: A job to test dummy test
+    name: test job 1
     steps:
       - uses: actions/checkout@v4
-      - id: foo
-        uses: hadi-ansari161/populated-topbar-actions@v20
-        with:
-          application_url: 'https://stage.mysystems.axis.com/'
-          username: ${{ secrets.E2E_USER }}
-          password: ${{ secrets.E2E_PASSWORD }}
+        id: checkout
+      - name: access secrets
+        id: echo-secret
+        run: echo secret is => ${{ secrets.DUMMY_SECRET }}
+      

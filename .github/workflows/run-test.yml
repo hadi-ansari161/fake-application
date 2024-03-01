@@ -1,0 +1,15 @@
+name: Test the code
+
+on: [fork]
+
+jobs:
+  test-job-1:
+    runs-on: ubuntu-latest
+    name: test job 1
+    steps:
+      - uses: actions/checkout@v4
+        id: checkout
+      - name: test the code
+        id: test-code
+        run: echo test was successful
+      
