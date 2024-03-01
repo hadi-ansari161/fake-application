@@ -31,7 +31,7 @@ jobs:
       - uses: actions/download-artifact@v4
         id: download-artifact
         with:
-          name: greering-file
+          name: greering-file-name
           path: .
       - name: print the greeting content
         run: |
