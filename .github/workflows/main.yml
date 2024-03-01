@@ -33,5 +33,5 @@ jobs:
           path: ./artifact
       - name: print the greeting content
         run: |
-          ls
+          ls ./artifact
           cat ./artifact/greeting.txt
