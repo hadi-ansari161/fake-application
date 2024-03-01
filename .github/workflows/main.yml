@@ -13,6 +13,6 @@ jobs:
         id: echo-secret
         env:
           TEST: ${{ secrets.DUMMY_SECRET }}
-        if: env.TEST == 'Dummy'
+        if: env.TEST == 'Dummy1'
         run: echo could read the secret
       
