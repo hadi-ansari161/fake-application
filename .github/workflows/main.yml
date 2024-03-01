@@ -26,8 +26,6 @@ jobs:
     runs-on: ubuntu-latest
     needs: [main-job-1]
     steps:
-      - uses: actions/checkout@v3
-        id: checkout
       - uses: actions/download-artifact@v4
         id: download-artifact
         with:
