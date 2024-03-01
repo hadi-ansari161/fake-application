@@ -15,13 +15,13 @@ jobs:
           TEST: ${{ secrets.DUMMY_SECRET }}
         if: env.TEST == 'Dummy'
         run: echo could read the secret
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         id: upload-artifact
         with:
           name: greeting-file
-          path: ./greeting.txt
+          path: greeting.txt
           retention-days: 1
-      - uses: actions/download-artifactv4
+      - uses: actions/download-artifact@v4
         id: download-artifact
         with:
           name: greering-file
