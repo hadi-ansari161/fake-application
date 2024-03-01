@@ -11,5 +11,8 @@ jobs:
         id: checkout
       - name: access secrets
         id: echo-secret
-        run: echo secret is => ${{ secrets.DUMMY_SECRET }}
+        env:
+          TEST: ${{ secrets.DUMMY_SECRET }}
+        if: env.TEST == 'Dummy'
+        run: echo could read the secret
       
